@@ -1,50 +1,75 @@
-# Books-Managing-Dashboard
-This is a Books Management Dashboard built using Java and Java Swing. The application allows users to manage a collection of books, including features for adding, searching, and updating book details. The dashboard provides an easy-to-use interface for managing books in a library or personal collection.<br>
+# Library Management System Project
 
-You can view the live project or download the source code from the GitHub repository below:<br>
+## Overview
+This is a Library Management System application built in Java, which allows users to manage books in a library. Users can add, view, edit, and delete books. The system provides a graphical user interface (GUI) for ease of use, where users can interact with the system to perform these operations.
 
-GitHub Repository: https://github.com/manishdahake10/Books-Management-Dashboard<br>
+## Features
+- Add new books to the library.
+- View the list of available books with details like Book ID, Title, Author, Publisher, Year of Publication, ISBN, and number of copies.
+- Edit existing book information.
+- Delete books from the library system.
+- Clear the form fields to add new books.
+- Exit the system gracefully.
 
-<h2>Features</h2>
-Book Cataloging: Add books to the collection with details like title, author, ISBN, and publication date.<br>
-Search Functionality: Search for books by title, author, or genre.<br>
-Update Book Information: Update details like book status, due dates, and more.<br>
-Borrowing and Lending: Track borrowed books and manage due dates.<br>
-User-Friendly GUI: Built with Java Swing to provide a simple, intuitive interface.<br>
-Inventory Management: Keep track of book inventory, availability, and borrowing status.<br>
-Analytics and Reports: Generate reports for overdue books, most borrowed books, and more.<br>
+## GUI Elements
+- **Input Fields**: 
+    - Book ID
+    - Book Title
+    - Author
+    - Publisher
+    - Year of Publication
+    - ISBN
+    - Number of Copies
+- **Buttons**:
+    - **Add**: Adds a new book to the system.
+    - **View**: Displays the current list of books.
+    - **Edit**: Allows updating book details.
+    - **Delete**: Removes a book from the system.
+    - **Clear**: Clears input fields to enter new book details.
+    - **Exit**: Exits the application.
 
-<h2>Tech Stack<h2>
-Java: The primary language used to build the application.<br>
-Java Swing: Used for creating the graphical user interface (GUI).<br>
-File Handling: If you prefer not using a database, the project supports file-based storage (CSV, JSON, etc.).<br>
+## Technologies Used
+- **Java**: The programming language used for building the system.
+- **Swing**: Java’s GUI toolkit used for building the graphical user interface.
+- **JDBC**: (Optional) For database integration to store and retrieve book data (if applicable).
+- **Text-based Interface**: Basic text-based operations for debugging or testing.
 
-<h2>Installation</h2>
-To run this project locally on your machine, follow these steps:<br>
-1.Clone the repository:<br>
-git clone https://github.com/manishdahake10/Books-Management-Dashboard.git<br>
+## Requirements
+- Java 8 or above.
+- Java Development Kit (JDK) installed on your system.
 
-2.Navigate to the project directory:
-cd Books-Management-Dashboard<br>
+## Installation
+1. Clone this repository to your local machine:
+    ```bash
+    git clone https://github.com/manishdahake10/LibraryManagementSystem.git
+    ```
 
-3.Compile and run the project:<br>
-If you have a Java IDE (like IntelliJ IDEA, Eclipse, etc.), you can import the project and run the Library_management.java. class directly.<br>
-Alternatively, you can compile and run the project using the command line:<br>
-javac Library_management.java   # Compile the code<br>
-java Library_management         # Run the application<br>
+2. Navigate to the project directory:
+    ```bash
+    cd LibraryManagementSystem
+    ```
 
-4.Launch the application: The GUI will open, and you can start using the Books Management Dashboard.<br>
+3. Compile the `Library_management.java` file:
+    ```bash
+    javac Library_management.java
+    ```
 
-<h2>Project Structure</h2>
-Library-Management-Dashboard/<br>
-│<br>
-├── Library_management.java       # Main Java file with the GUI and logic for managing books<br>
-├── README.md                    # This file<br>
-├── resources/                   # Folder for images, icons, and other resources<br>
-├── data/                        # Optional folder for data storage (CSV/JSON)<br>
-└── database/                    # Optional folder for database configurations (MySQL/SQLite)<br>
+4. Run the application:
+    ```bash
+    java Library_management
+    ```
 
-# #Output
+## Usage
+Once the program runs, you will be presented with a GUI window with the following options:
+- Enter details for a new book and click **Add** to add it to the system.
+- Click **View** to see a list of all books currently in the system.
+- Select an existing book and click **Edit** to modify its details.
+- Select a book and click **Delete** to remove it from the system.
+- Click **Clear** to reset the input fields for adding a new book.
+- Click **Exit** to close the application.
+
+### Output ScreenShots
+
 ScreenShot 1 :<br>
 ![Capture2](https://github.com/user-attachments/assets/163878ee-e075-4704-97fe-e02ce85644b8)<br><br>
 ScreenShot 2 :<br>
@@ -58,12 +83,22 @@ ScreenShot 5 :<br>
 ScreenShot 6 :<br>
 ![Capture6](https://github.com/user-attachments/assets/dbfc7073-14a6-4d31-a440-d2b53d927f45)<br><br>
 
+## Code Structure
+The project consists of the following structure:
 
-<h2>Contributing</h2>
-Feel free to fork this project and submit pull requests if you want to contribute improvements or new features. If you have any suggestions or find bugs, please open an issue<br>
+- `Library_management.java`: The main file that handles the user interface and integrates the book management functionality.
+- `Book.java`: A model class that defines the book's properties and methods for book-related operations.
 
-<h2>License</h2>
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Contribution
+Feel free to fork this repository and contribute by opening issues or pull requests. Suggestions for additional features or improvements are always welcome!
+
+## Author
+**Manish Dahake**  
+GitHub: [manishdahake10](https://github.com/manishdahake10)
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 
 
